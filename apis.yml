@@ -1,23 +1,62 @@
 aid: apogee-interactive
+
 name: Apogee Interactive
-description: 'Apogee Interactive is a company surfaced via the API Evangelist harvest backlog (source:
-  secondary-market) and added to the network as a stub for full-pipeline profiling.'
+
+image: http://static1.squarespace.com/static/6074cc2c7567d12fb0c6b2c2/t/607a28e60aca4f4aedf2a5f1/1628712044333/Social+Preview.jpg?format=1500w
+
+description: 'Apogee Interactive, operating as Apogee Entertainment, is an indie game publisher that supports developers with marketing, global exposure, and publishing services. Founded on the legacy of pioneering titles from the 1990s, it continues to partner with modern indie studios to bring innovative games to market, offering resources such as dev blogs, community engagement, and distribution support.'
+
 url: https://raw.githubusercontent.com/api-evangelist/apogee-interactive/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-25 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-25'
+
 modified: '2026-09-25'
+
 tags:
-- Company
-apis: []
+- Indie Publishing
+- Game Publishing
+- IP Development
+- Marketing
+- Developer Support
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Hosts
+  url: hosts/apogee-interactive-hosts.yml
+- type: PrivacyPolicy
+  url: https://www.apogeeent.com/privacy-policy
+- type: DomainSecurity
+  url: security/apogee-interactive-domain-security.yml
 - type: Website
-  url: https://forgeglobal.com/apogee-interactive_stock/
+  url: https://brillion.ai/
+
+apis: []
+
+x-coverage:
+  state: none
+  reason: no-developer-program
+  method: derived
+  generated: '2026-09-25'
+  generator: derive-coverage.py (pre-flight evidence)
+  detail: >-
+    the company publishes no developer documentation host and no machine-readable contract on its own domain
+x-enrichment:
+  date: '2026-09-25'
+  status: enriched
+  artifacts_added: 5
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local
