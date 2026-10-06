@@ -19,7 +19,7 @@ specificationVersion: '0.20'
 
 created: '2026-09-25'
 
-modified: '2026-09-25'
+modified: '2026-10-06'
 
 tags:
 - Indie Publishing
@@ -35,6 +35,10 @@ maintainers:
   email: info@apis.io
 
 common:
+- url: https://brillion.ai/about-us/news/
+  type: Blog
+- url: https://brillion.ai/about-us/news/feed/
+  type: BlogRSS
 - type: Hosts
   url: hosts/apogee-interactive-hosts.yml
 - type: PrivacyPolicy
